@@ -1,41 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
 </head>
 
 <body>
 	<div>
 		<form name="forms">
 			<input type="text" name="result">
-			<br></br>
+			<br>
 			<input type="button" class="clicknum" value="1" onclick="forms.result.value +='1'">
 			<input type="button" class="clicknum" value="2" onclick="forms.result.value +='2'">
 			<input type="button" class="clicknum" value="3" onclick="forms.result.value +='3'">
-			<br></br>
-			<input type="button"  value="4" onclick="forms.result.value +='4'">
-			<input type="button"  value="5" onclick="forms.result.value +='5'">
-			<input type="button"  value="6" onclick="forms.result.value +='6'">
-			<br></br>
-			<input type="button"  value="7" onclick="forms.result.value +='7'">
-			<input type="button"  value="8" onclick="forms.result.value +='8'">
-			<input type="button"  value="9" onclick="forms.result.value +='9'">
-			<br></br>
-			<input type="button"  value="+" onclick="forms.result.value +='+'">
-			<input type="button"  value="-" onclick="forms.result.value +='-'">
-			<input type="button"  value="*" onclick="forms.result.value +='*'">
-			<br></br>
-			<input type="button"  value="/" onclick="forms.result.value +='/'">
-			<input type="button"  value="0" onclick="forms.result.value +='0'">
-			<input type="button"  value="=" onclick="forms.result.value = eval(forms.result.value)">
-			<br></br>
-			<input type="button"  value="clear All" onclick="forms.result.value = ''">
+			<br>
+			<input type="button" value="4" onclick="forms.result.value +='4'">
+			<input type="button" value="5" onclick="forms.result.value +='5'">
+			<input type="button" value="6" onclick="forms.result.value +='6'">
+			<br>
+			<input type="button" value="7" onclick="forms.result.value +='7'">
+			<input type="button" value="8" onclick="forms.result.value +='8'">
+			<input type="button" value="9" onclick="forms.result.value +='9'">
+			<br>
+			<input type="button" value="+" onclick="forms.result.value +='+'">
+			<input type="button" value="-" onclick="forms.result.value +='-'">
+			<input type="button" value="*" onclick="forms.result.value +='*'">
+			<br>
+			<input type="button" value="/" onclick="forms.result.value +='/'">
+			<input type="button" value="0" onclick="forms.result.value +='0'">
+			<input type="button" value="=" onclick="forms.result.value = eval(forms.result.value)">
+			<br>
+			<input type="button" value="clear All" onclick="forms.result.value = ''">
 		</form>
 	</div>
-<script type="text/javascript">
-	function resultbar{
-		var numbers = document.getElementsByClassName('clicknum')[0];
-	}
-</script>
+	<script type="text/javascript">
+		function resultbar{
+			var numbers = document.getElementsByClassName('clicknum')[0];
+		}
+	</script>
 </body>
+
 </html>
